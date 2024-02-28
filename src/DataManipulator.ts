@@ -10,7 +10,6 @@ export interface Row {
   trigger_alert: number | undefined,
 }
 
-
 export class DataManipulator {
   static generateRow(serverRespond: ServerRespond[]): Row {
     const priceABC = (serverRespond[0].top_ask.price + serverRespond[0].top_bid.price) / 2;
